@@ -1,0 +1,107 @@
+#system{
+    width: 100%;
+    height: 22px;
+    background-color: black;
+    color: lightgray;
+    font-weight: 300;
+    font-size: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+/*system-signal css样式*/
+#system-signal{
+    height: 100%;
+    flex: 1;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#system-signal div{
+    margin-left: 2px;
+}
+#system-signal-symbol{
+    height: 10px;
+    width: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+#system-signal-symbol div{
+    margin-left: 2px;
+}
+#system-signal-symbol div:nth-child(1){
+    height: 2px;
+}
+#system-signal-symbol div:nth-child(2){
+    height: 4px;
+}
+#system-signal-symbol div:nth-child(3){
+    height: 7px;
+}
+#system-signal-symbol div:nth-child(4){
+    height: 10px;
+}
+.system-signal-symbol-ok{
+    width: 2px;
+    background-color: white;
+    border-radius: 2px 2px 0px 0px;
+}
+.system-signal-symbol-lose{
+    width: 2px;
+    background-color: gray;
+    border-radius: 2px 2px 0px 0px;
+}
+#system-signal-text{
+    height: 10px;
+    margin-left: 0px;
+    display: inline-block;
+}
+/*system-signal css样式*/
+#system-time{
+    height: 100%;
+    width: 30px;
+}
+/*system-power css样式*/
+#system-power{
+    height: 100%;
+    flex: 1;
+    justify-content: flex-end;
+}
+#system-power-body{
+    height: 8px;
+    width: 18px;
+    border: 1px solid lightgray;
+}
+#system-power-body-core{
+    height: 8px;
+    background-color: green;
+}
+#system-power-head{
+    height: 5px;
+    width: 2px;
+    margin-right: 5px;
+    background-color: lightgray;
+}
+@keyframes charge {
+    20%{
+        width: 3px;
+        background-color: crimson;
+    }
+    50%{
+        width: 9px;
+        background-color: orange;
+    }
+    80%{
+        width: 15px;
+        background-color: green;
+    }
+    100%{
+        width: 18px;
+        background-color: green;
+    }
+}
+.power-charge{
+    animation: charge 4s linear infinite;
+}
+
+
+/*system-power css样式*/

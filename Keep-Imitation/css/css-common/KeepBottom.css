@@ -1,0 +1,63 @@
+#KeepBottom{
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    border-top: 1px solid #bebebe;
+}
+.KeepBottom-item{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.KeepBottom-icon{
+    height: 50%;
+    width: 30px;
+}
+.KeepBottom-text{
+    margin-top: 3px;
+    height: 35%;
+    width: 30px;
+    color: #8a8a8a;
+    font-size: 8px;
+    font-weight: 400;
+}
+#KeepBottom-sport-icon{
+    background-image: url(../../img/icon/lightning-gray.svg);
+}
+#KeepBottom-find-icon{
+    background-image: url(../../img/icon/circle-point-gray.svg);
+}
+#KeepBottom-community-icon{
+    background-image: url(../../img/icon/community-gray.svg);
+}
+#KeepBottom-mine-icon{
+    background-image: url(../../img/icon/mine-gray.svg);
+}
+#KeepBottom-sport:hover #KeepBottom-sport-icon{
+    background-image: url(../../img/icon/lightning-black.svg);
+}
+#KeepBottom-sport:hover #KeepBottom-sport-text{
+    color: #2c2c2c;
+}
+#KeepBottom-find:hover #KeepBottom-find-icon{
+    background-image: url(../../img/icon/circle-point-black.svg);
+}
+#KeepBottom-find:hover #KeepBottom-find-text{
+    color: #2c2c2c;
+}
+#KeepBottom-community:hover #KeepBottom-community-icon{
+    background-image: url(../../img/icon/community-black.svg);
+}
+#KeepBottom-community:hover #KeepBottom-community-text{
+    color: #2c2c2c;
+}
+#KeepBottom-mine:hover #KeepBottom-mine-icon{
+    background-image: url(../../img/icon/mine-black.svg);
+}
+#KeepBottom-mine:hover #KeepBottom-mine-text{
+    color: #2c2c2c;
+}

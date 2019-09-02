@@ -1,0 +1,205 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:2:1-105:12
+	package
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:8:22-75
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:9:5-10:23
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:11:22-77
+uses-sdk
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Cactus\.android\build-cache\953390aa8a979cf2b894cf77e16087c2e1fa54e0\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Cactus\.android\build-cache\e215dc7e07d3239f97e01a232597e512f7b8cb87\output\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Cactus\.android\build-cache\269e3a66e343eb331a3b6754d3fcbe50f883d7e1\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Cactus\.android\build-cache\ae902e7ffa516ca348afd339190fef3d1b029e8e\output\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Cactus\.android\build-cache\953390aa8a979cf2b894cf77e16087c2e1fa54e0\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:14:9-38
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:13:9-34
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:15:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:16:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:18:22-72
+uses-permission#android.permission.READ_LOGS
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:20:22-65
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:21:5-71
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:21:22-68
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:25:5-79
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:27:22-76
+uses-permission#android.permission.READ_CONTACTS
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:28:5-72
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:28:22-69
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:30:5-73
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:30:22-70
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:33:22-78
+application
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:35:5-103:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\Cactus\.android\build-cache\953390aa8a979cf2b894cf77e16087c2e1fa54e0\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\Cactus\.android\build-cache\e215dc7e07d3239f97e01a232597e512f7b8cb87\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\Cactus\.android\build-cache\269e3a66e343eb331a3b6754d3fcbe50f883d7e1\output\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Cactus\.android\build-cache\ae902e7ffa516ca348afd339190fef3d1b029e8e\output\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:38:9-41
+	android:allowBackup
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:36:9-35
+	android:icon
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:37:9-38
+activity#com.example.rollcall.StartActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:39:9-47:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:41:13-45
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:40:13-62
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:42:13-46:29
+action#android.intent.action.MAIN
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:45:17-77
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:45:27-74
+activity#com.example.rollcall.MainActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:48:9-52:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:51:13-45
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:50:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:49:13-61
+activity#com.example.rollcall.CheckRollcallMethod
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:53:9-57:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:56:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:55:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:54:13-68
+activity#com.example.rollcall.RandomNameActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:58:9-62:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:61:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:60:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:59:13-67
+activity#com.example.rollcall.OrderNameActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:63:9-67:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:66:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:65:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:64:13-66
+activity#com.example.rollcall.QueryActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:68:9-72:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:71:13-35
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:70:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:69:13-62
+activity#com.example.Publish.NoteNewActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:73:9-77:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:76:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:75:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:74:13-63
+activity#com.example.fragment.About
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:78:9-82:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:81:13-40
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:80:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:79:13-54
+activity#com.example.login.LoginActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:83:9-87:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:86:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:85:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:84:13-59
+activity#com.example.login.RegisterActivity
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:88:9-92:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:91:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:90:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:89:13-62
+activity#com.example.FaceIdentify.FaceRollcall
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:93:9-97:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:96:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:95:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:94:13-65
+activity#com.example.FaceIdentify.ApplyForMeeting
+ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:98:9-102:20
+	android:label
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:101:13-33
+	android:theme
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:100:13-63
+	android:name
+		ADDED from G:\Android\AndroidProject\RollCall_C\app\src\main\AndroidManifest.xml:99:13-68

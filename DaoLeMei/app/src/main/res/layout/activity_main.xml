@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/console_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb"
+        android:orientation="horizontal"
+        >
+        
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/whitesmoke"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="2.0dip"
+            >
+            
+            <RadioButton 
+                android:id="@+id/main_tab_call"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/pic_class48"
+                android:text="@string/main_nav_call"
+                android:textColor="@color/black"
+                />
+            <RadioButton 
+                android:id="@+id/main_tab_count"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/more_one48"
+                android:text="基础功能"
+                android:textColor="@color/black"
+                />
+            <RadioButton 
+                android:id="@+id/main_tab_more"
+                style="@style/main_tab_bottom"
+                android:drawableTop="@drawable/more_three48"
+                android:text="后台服务"
+                android:textColor="@color/black"
+                />
+        </RadioGroup>
+      
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+h1,h3{
+    color: darkcyan;
+}
+#content{
+    margin-left: 200px;
+    align-content: center;
+    background: #ededed;
+    width: 900px;
+}
+hr{
+    width: 900px;
+    height: 3px;
+    background: cadetblue;
+}
+.type1{
+    cellspacing: 10px;
+    cellpadding: 10px;
+    width: 900px;
+}
+.type2{
+    cellpadding:5px;
+    cellspacing:10px;
+    width:900px;
+}
+.td_center{
+    text-align: center;
+}

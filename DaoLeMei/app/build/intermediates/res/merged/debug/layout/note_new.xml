@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <com.example.rollcall.Topbar
+        android:id="@+id/topbar_publish"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        app:leftBackground="@drawable/leftselecter"
+        app:titleText="发布通知"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="10sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <EditText
+        android:id="@+id/editText_content"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:background="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="通知："
+        android:textColor="#000"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/bt_publish"
+        android:background="#fff"
+        android:layout_marginTop="20px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="发布" />
+</LinearLayout>

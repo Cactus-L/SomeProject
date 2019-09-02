@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+		<script src="../js/common.js"></script>
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	      	var recResult = null;
+	      	document.addEventListener("plusready",function(){
+	      		var r = plus.storage.getItem("recResult");
+	      		recResult = strToJson(r);
+	      		for(var i = 0; i < recResult.Result.length; i++){
+	      			var str = "<li class='mui-table-view-cel' onclick='detial("+i+")'><div class='mui-slider-cell'><div class='oa-contact-cell mui-table'><div class='oa-contact-avatar mui-table-cell'>";
+		      		str += "<img style = 'width:65px;height:65px;' src='"+ recResult.Result[i].ImageUrl +"'/>";
+		      		str += "</div><div class='oa-contact-content mui-table-cell'><div class='mui-clearfix'><h4 class='oa-contact-name'>";
+					str += recResult.Result[i].Name;	
+					str += "</h4><span class='oa-contact-position mui-h6'>";
+					str += "相似度：" + recResult.Result[i].Score + "%";
+					str += "</span></div><p class='oa-contact-email mui-h6'>";
+					str += recResult.Result[i].Genus + " " + recResult.Result[i].Family;
+					str += "</p></div></div></div></li>"
+		      		var E = document.getElementById("aaab");
+					E.innerHTML +=str;
+	      		}
+	      	},false);
+	      	function strToJson(str){
+				var jj = (new Function("return " + str))();
+				return jj;
+			}
+	      	function detial(i){
+				var apiContextUrl = 'plant/info';
+		        var code = recResult.Result[i].InfoCode; //这个植物代号是调用 植物花卉识别接口_v2.html 内接口可获得的InfoCode字段
+		        plus.storage.setItem("ImageUrl",recResult.Result[i].ImageUrl);
+		        var formData = {
+		            code: code
+		        };
+		        post(apiContextUrl, formData, 1);
+	      	}
+	    </script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">花卉识别结果</h1>
+		</header>
+		<div  style="margin-top: 50px;">
+			<ul id = "aaab" class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+					
+			</ul>
+		</div>
+		
+	</body>
+</html>

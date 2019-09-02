@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>花卉识别</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    	<script src="../js/common.js"></script>
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.title {
+				padding: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" style="padding-top: 50%;">
+			<button onclick="cam()" type="button" class="mui-btn mui-btn-green mui-btn-block">拍摄花卉</button>
+			<button class="mui-btn mui-btn-green mui-btn-block">
+		    	<input type="file" name="image" accept="image/jpeg" onchange="encodeImagetoBase64(this)" />
+		    </button>
+		    <button type="button" style="margin-top: 20px; width: 100px; height: 50px;"  onclick="recognize2()" class="mui-btn mui-btn-green mui-btn-outlined">进行识别</button>
+			<div style="margin-top: 50px;">
+				<a class="hint" id = "hint" href="" ></a>
+				<a class="link" id = "link" href="" ></a>
+			</div>
+		</div>
+		<script>
+		    /**
+		     * 植物花卉识别接口_v2 的请求示例
+		     */
+		    function aaa(){
+//		    	var apiContextUrl = 'plant/info';
+//		        var code = "nvKOoVFj9uowxOAx"; //这个植物代号是调用 植物花卉识别接口_v2.html 内接口可获得的InfoCode字段
+//		        var formData = {
+//		            code: code
+//		        };
+//		        post(apiContextUrl, formData, 1);
+				plus.webview.open('../html/detial.html', 'new', {}, 'slide-in-right', 200);
+		    }
+		    function recognize2() {
+		        //先准备数据
+		        var apiContextUrl = 'plant/recognize2';
+				var img_base64 = $(".link").text().replace('data:image/jpeg;base64,', '');
+				var formData = {
+		            img_base64: img_base64
+		        };
+		        post(apiContextUrl, formData, 0);
+		    }
+		    function cam() {
+		    	var cam = plus.camera.getCamera();
+		    	cam.captureImage(function(path){
+		    		  $(".hint").text("图像正在努力转码中，请稍候片刻......");
+					  var xpath = plus.io.convertLocalFileSystemURL(path);
+					  convertImgToBase64(xpath, function(base64Img){
+					  	$(".link").attr("href",base64Img);
+				        $(".link").text(base64Img);
+				        console.log(base64Img);
+				        $(".hint").text("图像已完成转码，可以进行识别");
+					}); 
+				},function(ex){
+					console.log(ex.Message);
+				});
+			}
+		    function convertImgToBase64(url, callback, outputFormat){
+			  var canvas = document.createElement('CANVAS'),
+			  ctx = canvas.getContext('2d'),
+			  img = new Image;
+			  img.crossOrigin = 'Anonymous';
+			  img.onload = function(){
+			    canvas.height = 500;
+			    canvas.width = 500;
+			    ctx.drawImage(img,0,0);
+			    var dataURL = canvas.toDataURL(outputFormat || 'image/jpeg');
+			    callback.call(this, dataURL);
+			    canvas = null; 
+			  };
+			  img.src = url;
+			}
+		</script>
+
+		
+	</body>
+
+</html>

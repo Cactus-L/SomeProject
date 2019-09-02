@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "26.0.1"
+
+    defaultConfig {
+        applicationId "com.example.rollcall"
+        minSdkVersion 8
+        targetSdkVersion 21
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile files('libs/jxl.jar')
+    compile files('libs/sqlitejdbc-v056.jar')
+    compile files('libs/bmobsdk_v3.2.3_0919.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+}

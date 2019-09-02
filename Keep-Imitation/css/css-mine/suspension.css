@@ -1,0 +1,93 @@
+#tm {
+    display: none;
+}
+.MineTop-set_menu {
+    width: 230px;
+    position: absolute;
+    right: 0;
+    top: 22px;
+    bottom: 0;
+    background-color: #ebebeb;
+    z-index: -1;
+    overflow: scroll;
+}
+#MineTop-set_menu-item1,#MineTop-set_menu-item1 b{
+    background-color: #321a1a;
+    text-indent: 5px;
+    color: whitesmoke;
+}
+#MineTop-set_menu-item1-back{
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/icon/right-white.svg);
+}
+#MineTop-set_menu-item-person_icon{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(../../img/pic/superman.jpg);
+}
+.MineTop-set_menu-item {
+    text-indent: 15px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    background-color: whitesmoke;
+}
+.item-margin_top{
+    margin-top: 5px;
+}
+.MineTop-set_menu a {
+    text-decoration: none;
+}
+.MineTop-set_menu b {
+    color: #321a1a;
+    font: bold 12px/24px Montserrat;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.4s;
+}
+
+/*Animation controls using checkbox hack*/
+
+/*Animate content area to the right*/
+
+#tm:checked ~ .MineTop-set_menu {
+    z-index: 2;
+}
+/*Animate links from right to left + fade in effect*/
+#tm:checked ~ .MineTop-set_menu b {
+    opacity: 1;
+    transform: translateX(0);
+}
+/*Adding delay to link animation - in multiples of .08s*/
+
+/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+
+#tm:checked ~ .MineTop-set_menu div:nth-child(1) b {transition-delay: 0.00s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(2) b {transition-delay: 0.16s;}
+#tm:checked ~ #MineTop-set_menu-item-person_icon {transition-delay: 0.16s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(3) b {transition-delay: 0.24s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(4) b {transition-delay: 0.32s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(5) b {transition-delay: 0.40s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(6) b {transition-delay: 0.48s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(7) b {transition-delay: 0.56s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(8) b {transition-delay: 0.64s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(9) b {transition-delay: 0.72s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(10) b {transition-delay: 0.80s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(11) b {transition-delay: 0.88s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(12) b {transition-delay: 0.96s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(13) b {transition-delay: 1.04s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(14) b {transition-delay: 1.12s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(15) b {transition-delay: 1.20s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(16) b {transition-delay: 1.28s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(17) b {transition-delay: 1.36s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(18) b {transition-delay: 1.44s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(19) b {transition-delay: 1.52s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(20) b {transition-delay: 1.60s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(21) b {transition-delay: 1.68s;}
+#tm:checked ~ .MineTop-set_menu div:nth-child(22) b {transition-delay: 1.76s;}

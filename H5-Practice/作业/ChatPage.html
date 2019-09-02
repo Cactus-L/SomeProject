@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatPage</title>
+    <style>
+        #h1{
+            background-image: url(../img/t1.jpg);
+        }
+        #h2{
+            background-image: url(../img/t2.jpg);
+        }
+        #h3{
+            background-image: url(../img/t3.jpg);
+        }
+        #h4{
+            background-image: url(../img/t4.jpg);
+        }
+        /*标题栏*/
+        .chat_title{
+            width: 420px;
+            height: 50px;
+            color: white;
+            background-color: black;
+            overflow: hidden;
+            top: 0px;
+            position: fixed;
+            z-index: 10;
+        }
+        .chat_back{
+            width: 10%;
+            height: 100%;
+            float: left;
+            background-image: url(../img/back.svg);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+        .chat_name{
+            width: 78%;
+            height: 50px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            display: inline-block;
+        }
+        .chat_more{
+            width: 10%;
+            height: 100%;
+            float: right;
+            background-image: url(../img/people.svg);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+        /*底部输入栏 */
+        .chat_bottom{
+            width: 420px;
+            height: 40px;
+            bottom: 0px;
+            background-color: #ebebeb;
+            position: fixed;
+            border-top: 1px solid lightgray;
+            z-index: 10;
+        }
+        .chat_voice{
+            width: 10%;
+            height: 100%;
+            float: left;
+            background-image: url(../img/voice.svg);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+        .chat_extend{
+            width: 10%;
+            height: 100%;
+            float: right;
+            background-image: url(../img/send.svg);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+        .chat_emoji{
+            width: 10%;
+            height: 100%;
+            float: right;
+            background-image: url(../img/emoji.svg);
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+        }
+        .chat_input{
+            width: 68%;
+            height: 100%;
+            color: black;
+            margin-top: 0px;
+            text-align: left;
+            line-height: 45px;
+            display: inline-block;
+        }
+        .chat_input_form{
+            width: 100%;
+            height: 100%;
+        }
+        .chat_input_form input{
+            width: 100%;
+            height: 60%;
+            border: 0px;
+            border-bottom: 1px solid gray;
+            background-color: #ebebeb;
+        }
+        /*common*/
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 楷体;
+        }
+        .border{
+            border: 1px solid yellow;
+        }
+        .container{
+            width: 420px;
+            height: 600px;
+            margin: 20px 0px 0px 450px;
+            background-color: #ebebeb;
+            overflow: scroll;
+        }
+        .list{
+            width: 100%;
+            margin-top: 15px;
+            position: relative;
+            vertical-align: top;
+            z-index: 1;
+        }
+        .firstList{
+            margin-top: 40px;
+        }
+        .lastList{
+            margin-bottom: 20px;
+        }
+        .content{
+            text-align: left;
+        }
+        /*other聊天样式*/
+        .bg_head{
+            /*w20%*/
+            width: 70px;
+            overflow: hidden;
+            display: inline-block;
+            position: absolute;
+        }
+        .name{
+            width: 50px;
+            height: 8px;
+            font-family: 华文彩云;
+            color: darkgray;
+            font-size: 10px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .head{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 5px 0px 0px 15px;
+            float: top;
+            background-size: contain;
+            display: inline-block;
+            box-shadow: 0px 0px 20px gray;
+        }
+        .triangle_talk{
+            width: 20px;
+            height: 20px;
+            background-color: whitesmoke;
+            transform: rotate(45deg);
+            top: 20px;
+            right: -15px;
+            display: inline-block;
+            position: absolute;
+            box-shadow: 0px 0px 5px gray;
+        }
+        .msg{
+            /*w80%*/
+            width: 250px;
+            min-height: 55px;
+            /*height: 100px;*/
+            left: 70px;
+            border-radius: 10px;
+            background-color: whitesmoke;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+        .line_talk{
+             width: 4px;
+             height: 100%;
+            left: 0px;
+             background-color: whitesmoke;
+             display: inline-block;
+             position: absolute;
+         }
+        .msg_main{
+            width: 95%;
+            margin: 10px 5px 0px 10px;
+            display: inline-block;
+        }
+        /*myself样式*/
+        .r_bg_head{
+            /*w20%*/
+            width: 70px;
+            right: 0px;
+            overflow: hidden;
+            display: inline-block;
+            position: absolute;
+        }
+        .r_head{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 5px 0px 0px 15px;
+            float: top;
+            background-size: contain;
+            display: inline-block;
+        }
+        .r_triangle_talk{
+            width: 20px;
+            height: 20px;
+            background-color: limegreen;
+            transform: rotate(45deg);
+            top: 20px;
+            left: -15px;
+            display: inline-block;
+            position: absolute;
+            box-shadow: 0px 0px 5px gray;
+        }
+        .r_msg{
+            /*w80%*/
+            width: 250px;
+            min-height: 55px;
+            right: -100px;
+            border-radius: 10px;
+            background-color: limegreen;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+        .r_line_talk{
+            width: 4px;
+            height: 100%;
+            right: 0px;
+            background-color: limegreen;
+            display: inline-block;
+            position: absolute;
+        }
+        .r_msg_main{
+            width: 95%;
+            text-align: right;
+            margin: 5px 0px 0px 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat_title">
+            <div class="chat_back"></div>
+            <div class="chat_name ">约饭四人组（4）</div>
+            <div class="chat_more"></div>
+        </div>
+        <div class="chat_bottom">
+            <div class="chat_voice"></div>
+            <div class="chat_input">
+                <form class="chat_input_form" action="#">
+                    <input type="text" name="input_content">
+                </form>
+            </div>
+            <div class="chat_extend"></div>
+            <div class="chat_emoji"></div>
+        </div>
+        <div class="list firstList">
+            <div class="bg_head">
+                <div class="name">李大狗</div>
+                <div class="head" id="h1"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="talker_info">
+                    </div>
+                    <div class="content">今天去吃什么？我好饿呀！饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿饿
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李二狗</div>
+                <div class="head" id="h2"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">要不去吃海底捞吧，想念那里的扯面！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李三狗</div>
+                <div class="head" id="h3"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">扯啥扯，净扯犊子，去吃烤肉，我请客
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="r_msg">
+                <div class="r_line_talk"></div>
+                <div class="r_msg_main">
+                    <div class="content">ε=(´ο｀*)))唉，今天又加班，你们去嗨吧。
+                    </div>
+                </div>
+            </div>
+            <div class="r_bg_head">
+                <div class="r_head" id="h4"></div>
+                <div class="r_triangle_talk"></div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李大狗</div>
+                <div class="head" id="h1"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！我好饿呀！
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李二狗</div>
+                <div class="head" id="h2"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">要不去吃海底捞吧，想念那里的扯面！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李三狗</div>
+                <div class="head" id="h3"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">扯啥扯，净扯犊子，去吃烤肉，我请客
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="r_msg">
+                <div class="r_line_talk"></div>
+                <div class="r_msg_main">
+                    <div class="content">ε=(´ο｀*)))唉，今天又加班，你们去嗨吧。
+                    </div>
+                </div>
+            </div>
+            <div class="r_bg_head">
+                <div class="r_head" id="h4"></div>
+                <div class="r_triangle_talk"></div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="bg_head">
+                <div class="name">李大狗</div>
+                <div class="head" id="h2"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">要不去吃海底捞吧，想念那里的扯面！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list lastList">
+            <div class="bg_head">
+                <div class="name">李二狗</div>
+                <div class="head" id="h3"></div>
+                <div class="triangle_talk"></div>
+            </div>
+            <div class="msg">
+                <div class="line_talk"></div>
+                <div class="msg_main">
+                    <div class="content">扯啥扯，净扯犊子，去吃烤肉，我请客
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

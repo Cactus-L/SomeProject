@@ -1,0 +1,56 @@
+#TiTop{
+    width: 100%;
+    height: 85px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#TiTop-search{
+    width: 100%;
+    height: 25px;
+}
+#TiTop-search-input{
+    width: 95%;
+    height: 20px;
+    background-color: #dedede;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 12px;
+}
+#TiTop-search-input input{
+    width: 80%;
+    height: 100%;
+    background-color: #dedede;
+    border: 0px solid #dedede;
+
+}
+#TiTop-menu{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.TiTop-menu{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.TiTop-menu-word{
+    height: 95%;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 200;
+    border-bottom: 1px solid black;
+}
+.TiTop-menu-word:hover{
+    font-weight: 600;
+    border-bottom: 3px solid black;
+}
+#TiContent-time{
+    width: 100%;
+    height: 25px;
+    color: black;
+    font-weight: 200;
+    background-color: #ebebeb;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        .case{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            margin: 50px;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+        .case:hover{
+            /*旋转*/
+            transform: rotate3d(10,40,20,-45deg) scale(0.6) translate(-50px,-50px);
+            border-radius: 50%;
+            opacity:0.5;
+        }
+        .case1:hover{
+            /*缩放*/
+            transform: scale(.6) translate(-50px,-50px);
+        }
+        .case2:hover{
+            /*位移*/
+            transform:translate(50px,-50px) rotate3d(10,40,20,45deg) scale(0.6);
+        }
+        .case3:hover{
+            /*倾斜变换*/
+            transform: skew(-45deg,-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case"></div>
+    <div class="case1 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+    <div class="case2 case"></div>
+    <div class="case3 case"></div>
+</body>
+</html>

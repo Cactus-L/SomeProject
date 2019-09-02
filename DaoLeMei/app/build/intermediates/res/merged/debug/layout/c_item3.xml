@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout android:orientation="horizontal"  
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"  
+    android:paddingLeft="10dp"  
+    android:paddingRight="10dp"  
+    android:paddingTop="1dp"  
+    android:paddingBottom="1dp" 
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:weightSum="1"
+    >
+ 
+        <TextView android:id="@+id/coursenames"   
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:text="null"
+            android:drawableLeft="@drawable/pic_classlisst"
+            android:textColor="@color/gray"
+            android:paddingLeft="120dp"
+            android:background="@color/lightgray"
+            android:singleLine="true"
+            android:layout_weight="1.18" />
+  </LinearLayout>  

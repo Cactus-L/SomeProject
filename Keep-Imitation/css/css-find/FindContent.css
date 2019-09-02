@@ -1,0 +1,318 @@
+#FindContent{
+    width: 100%;
+    flex: 1;
+    overflow: scroll;
+    background-color: #ebebeb;
+}
+/*hot图标,需要设置其父元素位置为relative*/
+.hot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: crimson;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.hot-icon{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/hot.svg);
+}
+/*hot-end*/
+/*part1-start*/
+#part1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: whitesmoke;
+}
+#part1-top{
+    width: 100%;
+    height: 55%;
+    background-image: url(../../img/pic/fit4.jpg);
+    position: relative;
+}
+#part1-top-icon{
+    bottom: 10px;
+    right: 0px;
+    height: 20px;
+    width: 50px;
+    color: whitesmoke;
+    background-color: #15c897;
+    font-weight: 100;
+    position: absolute;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: 0px 0px 5px gray;
+}
+#part1-center{
+    width: 100%;
+    height: 15%;
+    background-color: #ebebeb;
+}
+.part1-center-item{
+    height: 100%;
+    flex: 1;
+    color: #3c3c3c;
+}
+.part1-center-item-icon{
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+}
+.part1-center-item-text{
+    height: 100%;
+    width: 80px;
+    font-size: 8px;
+}
+#part1-center-item1-icon{
+    background-image: url(../../img/icon/pingpai.svg);
+}
+#part1-center-item2-icon{
+    background-image: url(../../img/icon/lightning-gray.svg);
+}
+#part1-center-item3-icon{
+    background-image: url(../../img/icon/guarantee.svg);
+}
+#part1-bottom{
+    width: 100%;
+    height: 30%;
+}
+.part1-bottom-item{
+    height: 100%;
+    flex: 1;
+}
+.part1-bottom-item-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #15c897;
+}
+#part1-bottom-item1-icon{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/bag.svg);
+}
+#part1-bottom-item2-icon{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/skirt.svg);
+}
+#part1-bottom-item3-icon{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/beixin.svg);
+}
+#part1-bottom-item4-icon{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/gift.svg);
+}
+.part1-bottom-item-text{
+    margin-top: 5px;
+    width: 50px;
+    height: 15px;
+}
+/*part1-end*/
+/*part2-start*/
+#part2{
+    margin-top: 10px;
+    width: 100%;
+    height: 25%;
+    background-color: whitesmoke;
+}
+#part2-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(../../img/pic/red-bg.jpg);
+    text-align: center;
+}
+#part2-pic-container{
+    height: 80%;
+    width: 40%;
+    color: whitesmoke;
+    margin-right: 45px;
+}
+#part2-pic-t1{
+    width: 80%;
+    height: 20%;
+    text-align: start;
+}
+#part2-pic-t2{
+    margin-top: 2px;
+    width: 80%;
+    height: 28%;
+    font-size: 16px;
+    text-align: start;
+}
+#part2-pic-t3{
+    width: 80%;
+    height: 28%;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 3px;
+}
+#part2-pic-t4{
+     width: 108px;
+     height: 16px;
+    padding: 1px;
+    border: 1px solid whitesmoke;
+ }
+/*part2-end*/
+/*part3-start*/
+#part3{
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+    background-color: whitesmoke;
+}
+#part3-title{
+    width: 100%;
+    height: 10%;
+    text-indent: 10px;
+}
+#part3-main{
+    width: 100%;
+    height: 90%;
+
+}
+.part3-main-container{
+    width: 95%;
+    height: 50%;
+    margin-left: 10px;
+}
+.part3-main-item{
+    width: 30%;
+    height: 90%;
+    /*background-color: ghostwhite;*/
+    box-shadow: 0px 0px 10px #bebebe;
+    position: relative;
+}
+.part3-main-item-pic{
+    width: 100%;
+    height: 60%;
+    border-bottom: 2px solid #ebebeb;
+}
+.part3-main-item-name{
+    width: 100%;
+height: 20%;
+margin-left: 3px;
+}
+.part3-main-item-price{
+    width: 100%;
+    height: 20%;
+    color: orange;
+    margin-left: 3px;
+}
+#part3-main-item1-pic{
+    background-image: url(../../img/pic/glasses.jpg);
+}
+#part3-main-item2-pic{
+    background-image: url(../../img/pic/cap.jpg);
+}
+#part3-main-item3-pic{
+    background-image: url(../../img/pic/runmachine.jpg);
+}
+#part3-main-item4-pic{
+    background-image: url(../../img/pic/rope.jpg);
+}
+#part3-main-item5-pic{
+    background-image: url(../../img/pic/cap2.jpg);
+}
+#part3-main-item6-pic{
+    background-image: url(../../img/pic/kneecap.jpg);
+}
+/*part3-end*/
+/*part4-start*/
+#part4{
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+    background-color: whitesmoke;
+}
+#part4-title{
+    width: 100%;
+    height: 10%;
+    text-indent: 10px;
+}
+#part4-main{
+    width: 100%;
+    height: 90%;
+
+}
+.part4-main-container{
+    width: 95%;
+    height: 50%;
+    margin-left: 10px;
+}
+.part4-main-item{
+    width: 30%;
+    height: 90%;
+    /*background-color: ghostwhite;*/
+    box-shadow: 0px 0px 10px #bebebe;
+    position: relative;
+}
+.part4-main-item-pic{
+    width: 100%;
+    height: 60%;
+    border-bottom: 2px solid #ebebeb;
+}
+.part4-main-item-name{
+    width: 100%;
+    height: 20%;
+    margin-left: 3px;
+}
+.part4-main-item-price{
+    width: 100%;
+    height: 20%;
+    color: crimson;
+    margin-left: 3px;
+}
+#part4-main-item1-pic{
+    background-image: url(../../img/pic/pants.jpg);
+}
+#part4-main-item2-pic{
+    background-image: url(../../img/pic/bag3.jpg);
+}
+#part4-main-item3-pic {
+    background-image: url(../../img/pic/bag4.jpg);
+}
+#part4-main-item4-pic{
+    background-image: url(../../img/pic/wheel.jpg);
+}
+#part4-main-item5-pic{
+    background-image: url(../../img/pic/ball.jpg);
+}
+#part4-main-item6-pic{
+    background-image: url(../../img/pic/cat.jpg);
+}
+/*part4-end*/
+/*part5-start*/
+#part5{
+    width: 100%;
+    height: 10%;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    background-color: whitesmoke;
+}
+#part5-bottom{
+    width: 100%;
+    height: 100%;
+}
+#part5-bottom-item{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#part5-bottom-item-pic{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icon/down.svg);
+}
+#part5-bottom-item-text{
+    height: 100%;
+    margin-left: 5px;
+}
+/*part5-end*/

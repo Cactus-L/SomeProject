@@ -1,0 +1,76 @@
+#TiContent{
+    width: 100%;
+    flex: 1;
+    overflow: scroll;
+    background-color: whitesmoke;
+}
+#TiContent-list{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#TiContent-list-time{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: gray;
+}
+#TiContent-list-time-detial{
+    height: 20px;
+    width: 80%;
+}
+
+#TiContent-list-main{
+    width: 85%;
+    height: 100%;
+}
+#TiContent-list-main-title{
+    width: 100%;
+    height: 30%;
+    font-size: 15px;
+    font-weight: 600;
+}
+#TiContent-list-main-content{
+    width: 100%;
+    height: 28%;
+}
+#TiContent-list-main-content div{
+    width: 90%;
+    height: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 限制在一个块元素显示的文本的行数 */
+    -webkit-box-orient: vertical; /* 垂直排列 */
+    word-break: break-all;  /* 内容自动换行 */
+}
+#TiContent-list-main-open{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-flow: row;
+    color: gray;
+    margin-top: 4px;
+}
+#TiContent-list-main-open div:nth-child(1){
+    height: 100%;
+    width: 30px;
+    font-size: 8px;
+}
+#TiContent-list-main-open div:nth-child(2){
+    height: 100%;
+    width: 20px;
+    background-image: url(../img/spread.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#TiContent-list-main-more{
+    margin-top: 5px;
+    width: 100%;
+    height: 20%;
+}

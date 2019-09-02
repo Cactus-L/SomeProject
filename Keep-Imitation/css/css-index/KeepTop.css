@@ -1,0 +1,48 @@
+#KeepTop{
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    border-bottom: 1px solid #bebebe;
+    box-shadow: 0px 0px 20px gray;
+}
+#KeepTop-search{
+    height: 100%;
+    width: 40px;
+}
+#KeepTop-search div{
+    width: 50%;
+    height: 50%;
+    background-image: url(../../img/icon/search.svg);
+}
+/*左右滑动测试*/
+#KeepTop-menu{
+    height: 40px;
+    flex: 1;
+    font-size: 14px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+#KeepTop-menu li{
+    margin-top: 0px;
+    height: 95%;
+    width: 75px;
+    display: inline-block;
+    list-style: none;
+}
+.KeepTop-menu-item{
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+
+}
+/*box里用li，li属性设置为display:inline ，li里面包div,div的display属性也要设置为 inline-block*/
+/*左右滑动测试*/
+.KeepTop-menu-item:hover{
+    border-bottom: 2px solid black;
+}

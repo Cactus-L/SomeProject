@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout android:orientation="horizontal"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:paddingLeft="10dp"  
+    android:paddingRight="10dp"  
+    android:paddingTop="1dp"  
+    android:paddingBottom="1dp" 
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" >  
+        <TextView   
+            android:id="@+id/ids"  
+            android:layout_width="30dip"  
+            android:layout_height="30dip"   
+            android:textSize="10pt"  
+            android:singleLine="true"/>  
+         <TextView android:id="@+id/stunumber"   
+	         android:layout_width="100dip"  
+	         android:layout_height="30dip"   
+	         android:textSize="10pt"  
+	         android:singleLine="true"/>  
+        <TextView android:id="@+id/name"   
+            android:layout_width="80dip"  
+            android:layout_height="30dip"   
+            android:textSize="10pt"  
+            android:singleLine="true"/>  
+        <TextView android:id="@+id/coursename"   
+            android:layout_width="50dip"  
+            android:layout_height="30dip"   
+            android:textSize="10pt"  
+            android:singleLine="true"/>  
+  </LinearLayout>  

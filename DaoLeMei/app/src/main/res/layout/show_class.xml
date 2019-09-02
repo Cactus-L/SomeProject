@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#ebebeb">
+    <TextView
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:text="     班级列表"
+		android:gravity="left"
+		android:layout_marginTop="15px"
+		android:textColor="@color/cornflowerblue"
+		android:drawableLeft="@drawable/classlist_title"
+		android:paddingLeft="50dp"
+		android:textSize="30dp"/>
+  	<ListView
+          android:id="@+id/listViews"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+</LinearLayout>

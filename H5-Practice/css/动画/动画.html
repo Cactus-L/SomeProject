@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes play {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: #ebebeb;
+            margin: 100px 0px 0px 600px;
+        }
+        .cd{
+            width: 400px;
+            height: 400px;
+            line-height: 400px;
+            text-align: center;
+            background-image: url(../../img/goods.jpg);
+            border-radius: 50%;
+            position: relative;
+            transition: all 1s linear;
+        }
+        .play{
+            width: 50px;
+            height: 50px;
+            background-image: url(../../img/play.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 175px;
+            top: 175px;
+        }
+        .cd:hover{
+            animation: play 8s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cd">
+            <div class="play"></div>
+        </div>
+    </div>
+</body>
+</html>

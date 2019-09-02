@@ -1,0 +1,280 @@
+#MineContent{
+    width: 100%;
+    flex: 1;
+    overflow: scroll;
+    background-color: #ebebeb;
+    font-family: 黑体;
+}
+/*part1-start*/
+#MineContent-part1{
+    width: 100%;
+    height: 70%;
+    background-color: whitesmoke;
+}
+#MineContent-part1-top{
+    width: 100%;
+    height: 50%;
+    background-color: #321a1a;
+}
+#MineContent-part1-top-above{
+    width: 100%;
+    height: 70%;
+}
+#MineContent-part1-top-above-left{
+    height: 100%;
+    width: 25%;
+}
+#MineContent-part1-top-above-left-bg_icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #bebebe;
+    box-shadow: 0px 0px 20px gray;
+}
+#MineContent-part1-top-above-left-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(../../img/pic/superman.jpg);
+}
+#MineContent-part1-top-above-center{
+    height: 100%;
+    flex: 1;
+}
+.MineContent-part1-top-above-center-item{
+    width: 100%;
+    flex: 1;
+}
+#MineContent-part1-top-above-center div:first-child{
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600;
+}
+#MineContent-part1-top-above-center-item-below{
+    height: 20px;
+    width: 80px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: dimgrey;
+}
+#MineContent-part1-top-above-center-item-below div:first-child{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(../../img/icon/badge.svg);
+}
+#MineContent-part1-top-above-center-item-below div:last-child{
+    height: 20px;
+    width: 40px;
+    font-weight: 100;
+    font-size: 8px;
+}
+#MineContent-part1-top-above-right{
+    height: 100%;
+    width: 10%;
+}
+.MineContent-part1-top-above-right-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/icon/icon-right.svg);
+}
+#MineContent-part1-top-below{
+    width: 100%;
+    height: 30%;
+}
+.MineContent-part1-top-below-text{
+    height: 100%;
+    width: 20%;
+    color: whitesmoke;
+}
+.MineContent-part1-top-below-text div:first-child{
+    font-size: 14px;
+}
+.MineContent-part1-top-below-text div:last-child{
+    margin-left: 2px;
+    font-size: 8px;
+}
+#MineContent-part1-center{
+    width: 100%;
+    height: 20%;
+}
+.MineContent-part1-center-item{
+    height: 100%;
+    width: 30%;
+}
+#MineContent-part1-center-item1{
+    font-size: 22px;
+    font-weight: 700;
+    color: #15c897;
+}
+#MineContent-part1-center-item-text{
+    height: 20px;
+    width: 50px;
+    font-size: 10px;
+    font-weight: 100;;
+    color: #321a1a;
+}
+#MineContent-part1-center-item-icon{
+    height: 20px;
+    width: 20px;
+    background-image: url(../../img/icon/right-gray.svg);
+}
+#MineContent-part1-bottom{
+    width: 100%;
+    height: 30%;
+    border-top: 2px solid #ebebeb;
+}
+#MineContent-part1-bottom-above{
+    width: 100%;
+    height: 30%;
+    font-size: 16px;
+    color: #321a1a;
+    text-indent: 20px;
+    font-weight: 600;
+}
+#MineContent-part1-bottom-below{
+    width: 100%;
+    height: 70%;
+}
+.MineContent-part1-bottom-below-item{
+    height: 100%;
+    width: 40%;
+}
+#MineContent-part1-bottom-below-item1-left{
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #321a1a;
+}
+#MineContent-part1-bottom-below-item1-right{
+    width: 40%;
+    height: 100%;
+}
+#MineContent-part1-bottom-below-item1-right div{
+    width: 100%;
+    flex: 1;
+}
+#MineContent-part1-bottom-below-item1-right div:last-child{
+    color: gray;
+}
+#MineContent-part1-bottom-below-item2-left{
+    width: 70%;
+    height: 100%;
+}
+.MineContent-part1-bottom-item{
+    width: 70px;
+    height: 26px;
+}
+.MineContent-part1-bottom-pic{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+#MineContent-part1-bottom-pic{
+    background-color: #bebebe;
+}
+#MineContent-part1-bottom-pic div{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/icon-run.svg);
+}
+#MineContent-part1-bottom-pic1{
+    position: relative;
+    left: -8px;
+    background-color: #bebebe;
+}
+#MineContent-part1-bottom-pic1 div{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/icon-swimming.svg);
+}
+#MineContent-part1-bottom-pic2{
+    position: relative;
+    left: -16px;
+    background-color: #bebebe;
+}
+#MineContent-part1-bottom-pic2 div{
+    width: 80%;
+    height: 80%;
+    background-image: url(../../img/icon/icon-walk.svg);
+}
+#MineContent-part1-bottom-below-item2-right{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/icon/right-gray.svg);
+}
+/*part1-end*/
+/*part2-start*/
+#part2{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+#part2-above{
+    width: 100%;
+    height: 20%;
+}
+#part2-below{
+    width: 100%;
+    flex: 1;
+    margin-top: 2px;
+}
+.part2-above-item{
+    height: 100%;
+    width: 20%;
+}
+.part2-above-item-icon{
+    width:25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+.part2-above-item-text{
+    width:100%;
+    height: 25px;
+    color: #8a8a8a;
+}
+#part2-above-item1-icon{
+    background-image: url(../../img/icon/train.svg);
+}
+#part2-above-item2-icon{
+    background-image: url(../../img/icon/book.svg);
+}
+#part2-above-item3-icon{
+    background-image: url(../../img/icon/land.svg);
+}
+#part2-above-item4-icon{
+    background-image: url(../../img/icon/activity.svg);
+}
+.part2-below-item{
+    width: 100%;
+    height: 16%;
+    border: 1px solid #ebebeb;
+    align-items: center;
+}
+.part2-below-item-left{
+    height: 100%;
+    width: 40%;
+    font-size: 14px;
+}
+.part2-below-item-center{
+    height: 100%;
+    width: 40%;
+    font-size: 8px;
+    color: #8a8a8a;
+}
+.part2-below-item-right{
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/icon/right.svg);
+}
+.part2-below-item-left-red_point{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: 2px;
+}
+/*part2-end*/

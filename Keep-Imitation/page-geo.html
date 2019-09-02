@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        body, html,#CommunityContent-geo {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style>
+    <title>地图展示</title>
+    <link rel="stylesheet" href="css/css-community/CommunityTop.css">
+    <link rel="stylesheet" href="css/css-community/CommunityContent.css">
+</head>
+<body>
+    <!--sub_container-start-->
+    <div id="sub_container" class="">
+        <!--Keep-top_start-->
+        <div id="CommunityTop" class="flex-column-around">
+            <div id="CommunityTop-title" class="flex-row-between ">
+                <div id="CommunityTop-title-friend" class="xy-center ">
+                    <div id="CommunityTop-title-friend-icon" class="bg_img-contain-center "></div>
+                </div>
+                <div id="CommunityTop-title-name" class="xy-center ">
+                    同城
+                </div>
+                <div id="CommunityTop-title-camera" class="xy-center ">
+                    <div id="CommunityTop-title-camera-icon" class="bg_img-contain-center "></div>
+                </div>
+            </div>
+            <div id="CommunityTop-menu" class="">
+                <!--<div class="KeepTop-menu-item xy-center border">训练</div> 如何实现不换行？-->
+                <div class="CommunityTop-menu-item xy-center ">关注</div>
+                <div class="CommunityTop-menu-item xy-center ">达人</div>
+                <div class="CommunityTop-menu-item xy-center ">视频</div>
+                <div class="CommunityTop-menu-item xy-center ">干货</div>
+                <div class="CommunityTop-menu-item xy-center ">同城</div>
+            </div>
+        </div>
+        <!--Keep-top_end-->
+        <!--CommunityContent-start-->
+        <div id="CommunityContent" class="xy-center">
+            <div id="CommunityContent-geo"></div>
+            <div id="CommunityContent-icon_bg" class="">
+                <div id="CommunityContent-icon" class="bg_img-contain-center"></div>
+            </div>
+        </div>
+        <!--CommunityContent-end-->
+    </div>
+    <!--sub_container-end-->
+</body>
+</html>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vVRKfN19sDg179waNGULt6clrEFddMfp"></script>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("CommunityContent-geo");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(117.252, 39.103), 16);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    map.setCurrentCity("天津");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+<script>
+    $("#CommunityContent-icon_bg").click(function () {
+        // alert(1);
+        $("#sub_container").load("page-community.html");
+    })
+</script>

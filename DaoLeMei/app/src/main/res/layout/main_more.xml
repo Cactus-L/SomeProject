@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main_more"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ebebeb"
+	android:orientation="vertical">
+
+	<com.example.rollcall.Topbar
+		android:id="@+id/topbar_more"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#000"
+		app:rightBackground="@drawable/sign_out_selecter"
+		app:titleText="到了没FT"
+		app:titleTextColor="#FFF"
+		app:titleTextSize="10sp"
+		tools:layout_editor_absoluteX="8dp"
+		tools:layout_editor_absoluteY="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		android:background="#ebebeb"
+        android:layout_gravity="center_horizontal"
+        >
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/loadbutton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:drawableStart="@drawable/ic_downloading"
+			android:text="	下载名单"
+			android:background="@drawable/button"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			/>
+		<ListView
+			android:id="@+id/lv_courseList"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ListView>
+		<Button
+			android:id="@+id/bt_applyForMeeting"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:drawableStart="@drawable/ic_downloading"
+			android:text="	申请会议"
+			android:background="@drawable/button"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/version_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_about"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:background="@drawable/button"
+			android:text="	关于版本"
+			android:textColor="@color/black"
+			android:layout_marginBottom="3dp"
+			android:textSize="20sp"/>
+        <Button
+			android:id="@+id/callme_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_about"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+            android:text="	联系我们"
+            android:background="@drawable/button"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/about_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_about"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="关于“到了没”"
+			android:textColor="@color/black"
+			android:textSize="18sp"/>
+	</LinearLayout>
+</LinearLayout>

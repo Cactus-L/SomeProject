@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /*inline:行元素，有多个元素时，并列与一行，直到本行显示不下才换行，inline属性下宽高设置无意义，其宽高只与元素本身的属性有关*/
+        /*block：块元素，一个块元素占一行，可以设置其宽高。*/
+        /*inline-block：综合了inline和block的特点，位于同一行，且可设置宽高*/
+        /*a标签默认display属性为inline*/
+        a{
+            width: 50px;
+            height: 50px;
+            background-color: cadetblue;
+            text-decoration: none;
+            text-align: center;
+            display:block;
+        }
+        .a{
+            width: 50px;
+            height: 50px;
+            background-color: darkred;
+            display:inline-block;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            text-align: center;
+            border: 10px solid rebeccapurple;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">a</a><a href="#">b</a><a href="#">c</a>
+    <a href="#" class="a">a</a><a href="#" class="a">b</a><a href="#"class="a">c</a>
+    <hr>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</body>
+</html>

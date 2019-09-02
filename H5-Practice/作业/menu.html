@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menudemo</title>
+    <style>
+        ul li{
+            list-style: none;
+            font-size: 24px;
+            background-color: dodgerblue;
+            margin: 2px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            /*设置a标签,显示成块级元素,设置宽度、高度，就能够具有大面积点击有效*/
+        }
+        ul li a:hover{
+            box-shadow:0px 0px 5px gray;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">java</a></li>
+    <li><a href="#">C++</a></li>
+    <li><a href="#">spark</a></li>
+    <li><a href="#">dedis</a></li>
+</ul>
+</body>
+</html>

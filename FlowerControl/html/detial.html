@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    	<script src="common.js"></script>
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	      	var inf = null;
+	      	var ImageUrl = null;
+	      	document.addEventListener("plusready",function(){
+	      		var r = plus.storage.getItem("info");
+	      		ImageUrl = plus.storage.getItem("ImageUrl");
+//	      		var img = document.getElementById("img");
+//	      		img.src = ImageUrl;
+	      		inf = strToJson(r);
+	      		
+	      		var str = "<div class='mui-card'><div class='mui-card-header'><div class='mui-card-header mui-card-media'>";
+				str += "<img src= '"+ImageUrl+"' id='img'/><div class='mui-media-body'>";
+				str +=	inf.result.nameStd;
+				str += "<p>"+inf.result.familyCn +" " + inf.result.genusCn+ " " + inf.result.description +"</p>";
+				str += "</div></div></div><div class='mui-card-content'><ul class='mui-table-view'><li class='mui-table-view-cell'>";
+				str += "实用价值："+inf.result.info.jzgy;
+				str += "</a></li><li class='mui-table-view-cell'>";
+				str += "花语寓意："+inf.result.info.hyyy;
+				str += "</a></li><li class='mui-table-view-cell'>";
+				str += "分布地区："+inf.result.info.fbdq;
+				str += "</a></li><li class='mui-table-view-cell'>";
+				str += "生长需求："+inf.result.info.yhjs;
+				str += "</a></li><li class='mui-table-view-cell'>";
+				str += "植物特征："+inf.result.info.bxtz;
+				str += "</a></li><li class='mui-table-view-cell'>";
+				str += "花开时间："+inf.result.info.hksj;
+				str += "</a></li></ul></ul></div>";
+				str += "</div>";
+				var E = document.getElementById("aaab");
+				E.innerHTML = str;
+	      	},false);
+	      	function strToJson(str){
+				var jj = (new Function("return " + str))();
+				return jj;
+			}
+
+	    </script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">花卉详细内容</h1>
+		</header>
+		<div  id = "aaab" style="margin-top: 50px;">
+			
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_GZ1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "G:\\Android\\AndroidProject\\RollCall_C\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Cactus\\.android\\build-cache\\953390aa8a979cf2b894cf77e16087c2e1fa54e0\\output\\res\\anim\\abc_popup_enter.xml"
+    }
+]

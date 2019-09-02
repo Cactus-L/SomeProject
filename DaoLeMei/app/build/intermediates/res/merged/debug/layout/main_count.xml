@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main_count"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#ebebeb">
+
+	<com.example.rollcall.Topbar
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="#000"
+		app:titleText="到了没FT"
+		app:titleTextColor="#FFF"
+		app:titleTextSize="10sp"
+		tools:layout_editor_absoluteX="8dp"
+		tools:layout_editor_absoluteY="0dp" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="#ebebeb"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/export_three"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_upload"
+			android:clickable="true"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="	导出旷课记录学生名单"
+			android:textColor="@color/black"
+			android:textSize="20sp" />
+
+		<ListView
+			android:id="@+id/truantName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"></ListView>
+
+		<Button
+			android:id="@+id/export_all"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_upload"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="	导出班级所有学生名单"
+			android:textColor="@color/black"
+			android:textSize="20sp" />
+
+		<ListView
+			android:id="@+id/truantName1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ListView>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+
+		<Button
+			android:id="@+id/updatebutton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_upgrade"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="	同步信息到服务器"
+			android:textColor="@color/black"
+			android:textSize="20sp" />
+
+		<Button
+			android:id="@+id/quert_stu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_search"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="	查询学生"
+			android:textColor="@color/black"
+			android:textSize="20sp" />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/chat_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/icon_chat"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="  聊天室"
+			android:textColor="@color/black"
+			android:textSize="20sp"/>
+		<Button
+			android:id="@+id/publish_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/ic_publish"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="	发布作业"
+			android:textColor="@color/black"
+			android:textSize="20sp"/>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="20dp" />
+		<Button
+			android:id="@+id/face_bt"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clickable="true"
+			android:gravity="left"
+			android:drawableStart="@drawable/classlist_title"
+			android:drawablePadding="10dp"
+			android:padding="10dp"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/button"
+			android:text="人脸签到"
+			android:textColor="@color/black"
+			android:textSize="20sp"/>
+	</LinearLayout>
+
+</LinearLayout>

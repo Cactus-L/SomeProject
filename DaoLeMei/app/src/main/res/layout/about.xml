@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <com.example.rollcall.Topbar
+        android:id="@+id/topbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        app:leftBackground="@drawable/leftselecter"
+        app:titleText="关于到了没V1.0.0"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="10sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginBottom="10px"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="关于到了没？" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="        在现在的高校中，由于学生的分布式教学，造成了教学管理的非严谨性，使得一些学生产生了逃课旷课的侥幸心理。所以教师的任务不仅仅是教学，还要同时负担考勤等烦杂的日常事务，这样就会严重影响到教师的授课时间，同时也影响了学生的听课时间。信息化给这样的一个状况带来了一个契机，基于信息化的考勤系统就在这种情况下变的越来越受欢迎，它给教师带来了更加高效的处理考勤和课堂提问的方法，使得教学能够比较顺利的进行下去，不会再因为考勤等烦杂事务影响教学。因此，开发到了没？，便是来解决这些问题的！" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10px"
+        android:paddingLeft="5px"
+        android:layout_height="50px"
+        android:layout_marginBottom="10px"
+        android:text="当前版本主要功能："
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="下载名单:    学生信息从服务器端下载到手机客户端，并在点名分页显示各个班级的列表。"
+        />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="同步信息到服务器:    将本地记录的学生出勤信息上传到服务器。"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="点名:    在点名分页点击班级名，进入该班级点名界面，目前可选择两种点名方式，顺序点名、随机点名"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="导出学生出勤信息:    选择班级，导出该班级旷课学生名单（或所有学生名单）信息到excel，在手机的文件根目录下可以找到该文件"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="查询学生:    进入查询界面，在输入框输入学生姓名（可模糊查询），点击查询学生，即可在当前界面显示该学生信息。"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="人脸签到:    申请会议，待后台处理后即可进行人脸签到。"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5px"
+        android:textColor="@color/black"
+        android:text="发布作业:    教师用户在教师客户端发布通知后，相关通知会显示在学生客户端。"
+        />
+
+
+</LinearLayout>

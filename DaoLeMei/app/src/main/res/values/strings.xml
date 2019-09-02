@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">到了没FT</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_nav_call">点名</string>
+	<string name="main_nav_count">统计</string>
+	<string name="main_nav_more">更多</string>
+	
+	<string name="choose_button">选择课程</string>
+	<string name="other_button">其它</string>
+	<string name="help_button">帮助</string>
+	<string name="open_file_failed">打开文件失败</string>
+	<string name="open_file_error_format">不支持的文件格式</string>
+	<string name="sdcard_unmonted_hint">请先插入SD卡</string>
+	<string name="open_file_none">"没有选择任何文件"</string>
+	<string name="addok">"添加"</string>
+	<string name="delok">"删除课程"</string>
+	<string name="showclass">"课程列表"</string>
+
+	<string name="ordername">"顺序点名"</string>
+	<string name="randomname">"随机点名"</string>
+	<string name="showstu">"显示所有学生信息"</string>
+	<string name="returnmain">"返回主界面"</string>
+
+	<string name="floatname">上一名</string>
+	<string name="nextname">下一名</string>
+
+	<string name="checkin">签到</string>
+	<string name="leave">请假</string>
+	<string name="crunk">旷课</string>
+	
+	<string name="stus_all">学生总数:</string>
+	<string name="stus_now">当前学生个数:</string>
+	<string name="stus_info">学生信息:</string>
+	<string name="stus_num">学号:</string>
+	
+	<string name="show_extract">显示抽取到的学生姓名</string>
+	<string name="float_choose_file">没有选择文件，请先选择文件</string>
+	
+	<!-- 统计 -->
+	<string name="three">导出有旷课记录的名单</string>
+	<string name="allstu">导出班级所有学生的名单</string>
+	<string name="querystu">查询学生</string>
+
+	<string name="login_username_hint">请输入用户名&#8230;</string>
+	<string name="login_password_hint">请输入密码&#8230;</string>
+	<string name="login_email_hint">请在此输入密码&#8230;</string>
+	<string name="login">登录</string>
+	<string name="register">注册</string>
+	<string name="register_txt1">还没有账号？</string>
+	<string name="register_txt2">立即注册 ></string>
+	<string name="login_account">账号 </string>
+	<string name="login_pwd">密码 </string>
+	<string name="login_email">确认密码 </string>
+	<string name="message_search_hint">搜索&#8230;</string>
+
+	<string name="network_tips">当前网络不可用,请检查您的网络!</string>
+	<string name="toast_error_password_null">密码不能为空</string>
+	<string name="toast_error_username_null">用户名不能为空</string>
+	<string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+	
+</resources>

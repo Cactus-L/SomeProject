@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="G:\Android\AndroidProject\RollCall_C\app\libs\Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c780862c40d4942fe3e0df73f24a4c47e6b6650d">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\Msc_b91f4971630aabb364862bda6637f6bdbfeb5303.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Cactus\.android\build-cache\ae902e7ffa516ca348afd339190fef3d1b029e8e\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_f20e7deb2f62c83a2b1d32ee5318f437e67a4242.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Cactus\.android\build-cache\e215dc7e07d3239f97e01a232597e512f7b8cb87\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\classes_8589e35fe16594a8b7ae73c592c0da2c78bd92fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\AndroidProject\RollCall_C\app\libs\bmobsdk_v3.2.3_0919.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="347dc80eab0cba3405457d3450fb9667ba305de5">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\bmobsdk_v3.2.3_0919_da240c80bd60de665039346141b1c48b5585d2df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_18b705139f486b557eced362a659cd6993c44dd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Cactus\.android\build-cache\ae902e7ffa516ca348afd339190fef3d1b029e8e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\classes_5e4b04225f779669524ceef9ed6e2310a044e962.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\AndroidProject\RollCall_C\app\libs\Sunflower.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="662ecdfa5fa755ef7d5de03ccbfaaf8b9ee23250">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\Sunflower_9450c06c6470cb8c8b6b77e7ee28c010357cf80d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Cactus\.android\build-cache\269e3a66e343eb331a3b6754d3fcbe50f883d7e1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\classes_3654ee98d4c667ee87ce307384cb29e421c22e4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\AndroidProject\RollCall_C\app\libs\sqlitejdbc-v056.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ba5206d1202877e94c417736d079ee83611a9ace">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\sqlitejdbc-v056_887c4c23ab4ee12aa7d3db702c582cbb8c5920bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Cactus\.android\build-cache\953390aa8a979cf2b894cf77e16087c2e1fa54e0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\classes_2224bacebf9f74f0c13f56fbb6b1334aab22a09c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\Android\AndroidProject\RollCall_C\app\libs\jxl.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a6f224353653001716448dec51065d050ac782b7">
+        <dex dex="G:\Android\AndroidProject\RollCall_C\app\build\intermediates\pre-dexed\debug\jxl_315f1398e253e11a50c325c28efa2819dded9e18.jar" />
+    </item>
+
+</items>
